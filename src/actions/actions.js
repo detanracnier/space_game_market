@@ -1,17 +1,13 @@
-const addToInventory = () => {
+export const addToInventory = (item) => {
     return {
         type: 'add_to_inventory',
-        payload: {
-            item
-        }
+        payload: item,
     }
 }
 
-const removeFromInventory = () => {
+export const removeFromInventory = (id) => {
     return {
         type: 'remove_from_inventory',
-        payload: {
-
-        }
+        payload: id,
     }
 }

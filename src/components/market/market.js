@@ -1,17 +1,18 @@
-import React, { useState} from 'react';
+import React from 'react';
 import weapons from '../../data/weapons';
 import Weapon from '../items/weapon';
+import './market.scss';
 
 export default function Market () {
-    const [state, setState] = useState({
-        weaponsList: weapons,
-    });
+    const weaponsList = weapons;
 
     return (
-        state.weaponsList.map(weapon => {
-            return(
-                <Weapon weaponItem={weapon} />
-            )
-        })
+        <div className="market_container">
+            {weaponsList.map(weapon => {
+                return(
+                    <Weapon weaponItem={weapon} />
+                )
+            })}
+        </div>
     )
 }
