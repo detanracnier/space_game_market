@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Nuclear Missile",
+        "crew": 10,
+        "power": 6,
+        "range": "L",
+        "rate_of_fire": 0.5,
+        "ammo": 6,
+        "speed": 4,
+        "percision": "Yes",
+        "shield_damage": 4,
+        "armor_damage": 2,
+        "crew_damage": 3,
+        "anti_fighter": "",
+        "anti_missile": "",
+        "cost": 100
+    },
+    {
+        "name": "Mezon Gun",
+        "crew": 15,
+        "power": 30,
+        "range": "L",
+        "rate_of_fire": 0.3,
+        "ammo": "",
+        "speed": "",
+        "percision": "No",
+        "shield_damage": 4,
+        "armor_damage": 4,
+        "crew_damage": 1,
+        "anti-fighter": "",
+        "anti-missile": "",
+        "cost": 130
+    }
+]
