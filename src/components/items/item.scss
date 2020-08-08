@@ -1,11 +1,13 @@
 .item_container {
     border-style: solid;
+    border-radius: 25px;
+    background-color: #e6e6e6;
 }
 
 .item_name {
     font-size: 1em;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
 }
 
 .item_table {

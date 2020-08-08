@@ -14,9 +14,18 @@ export default function ShipInventory(){
             <h2 className="header">Ship Inventory:</h2>
             {itemsSorted.map(item =>{
                 return (
-                    <div onClick={() => {
-                        dispatch(removeFromInventory(item.id))
-                    }}>{item.name}</div>
+                    <React.Fragment>
+                        <div className="item_container" onClick={() => {
+                            dispatch(removeFromInventory(item.id))
+                        }}>
+                            <h2 className="item_name">{item.name}</h2>
+                            <div className="item_cost_container">
+                                <div className="item_cost"><strong>Crew:</strong> {item.crew}</div>
+                                <div className="item_cost"><strong>Power:</strong> {item.power}</div>
+                                <div className="item_cost"><strong>Price:</strong> {item.cost}</div>
+                            </div>
+                        </div>
+                    </React.Fragment>
                 )
             })}
         </div>

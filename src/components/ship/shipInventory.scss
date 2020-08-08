@@ -11,3 +11,30 @@
     margin: 0;
     padding: 0;
 }
+
+.item_container {
+    border-style: solid;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    padding-left: 20px;
+}
+
+.item_name {
+    font-size: 1em;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.item_cost_container {
+    margin: 0;
+    padding-left:40%;
+    align-items: right;
+    align-content: right;
+    display: flex;
+}
+
+.item_cost {
+    font-size: 0.8em;
+    float:left;
+    width:30%;
+}
