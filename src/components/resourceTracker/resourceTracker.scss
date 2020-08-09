@@ -1,16 +1,23 @@
 .resource_tracker_container {
     top: 0;
     left: 0;
-    height: 100px;
+    height: 110px;
     width: 100%;
     position: fixed;
     border: solid;
     border-radius: 25px;
     background-color: #333333;
     margin-bottom: 10px;
+    padding-top:10px;
 }
 
 .resource_text {
     color: #ffffff;
     padding-left: 20px;
+}
+
+.ammo_text {
+    color: #ffffff;
+    float: right;
+    padding-right: 30px;
 }

@@ -6,6 +6,7 @@
         "power": 6,
         "range": "L",
         "rate_of_fire": 0.5,
+        "ammoType": "nuke",
         "ammo": 6,
         "speed": 4,
         "percision": "Yes",
@@ -23,14 +24,15 @@
         "power": 6,
         "range": "L",
         "rate_of_fire": 1,
+        "ammoType": "ship_to_ship",
         "ammo": 20,
         "speed": 5,
         "percision": "Yes",
         "shield_damage": 2,
         "armor_damage": 3,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 75
     },
     {
@@ -40,14 +42,15 @@
         "power": 4,
         "range": "M",
         "rate_of_fire": 3,
+        "ammoType": "rocket",
         "ammo": 30,
         "speed": 5,
         "percision": "No",
         "shield_damage": 1,
         "armor_damage": 2,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 70
     },
     {
@@ -57,14 +60,15 @@
         "power": 8,
         "range": "L",
         "rate_of_fire": 1,
+        "ammoType": "torpedo",
         "ammo": 10,
         "speed": 4,
         "percision": "No",
         "shield_damage": 3,
         "armor_damage": 5,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 90
     },
     {
@@ -80,8 +84,8 @@
         "shield_damage": 4,
         "armor_damage": 4,
         "crew_damage": 1,
-        "anti-fighter": "",
-        "anti-missile": "",
+        "anti_fighter": "",
+        "anti_missile": "",
         "cost": 130
     },
     {
@@ -97,8 +101,8 @@
         "shield_damage": 3,
         "armor_damage": 4,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 100
     },
     {
@@ -114,8 +118,8 @@
         "shield_damage": 5,
         "armor_damage": 9,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 170
     },
     {
@@ -131,8 +135,8 @@
         "shield_damage": 3,
         "armor_damage": 2,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 70
     },
     {
@@ -148,8 +152,8 @@
         "shield_damage": 2,
         "armor_damage": 3,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 70
     },
     {
@@ -165,8 +169,8 @@
         "shield_damage": 3,
         "armor_damage": 4,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 100
     },
     {
@@ -182,8 +186,8 @@
         "shield_damage": 4,
         "armor_damage": 3,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 80
     },
     {
@@ -199,8 +203,8 @@
         "shield_damage": 3,
         "armor_damage": 5,
         "crew_damage": 1,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 120
     },
     {
@@ -216,8 +220,8 @@
         "shield_damage": 0,
         "armor_damage": 2,
         "crew_damage": 0,
-        "anti-fighter": 4,
-        "anti-missile": 4,
+        "anti_fighter": 4,
+        "anti_missile": 4,
         "cost": 110
     },
     {
@@ -233,8 +237,8 @@
         "shield_damage": 2,
         "armor_damage": 5,
         "crew_damage": 2,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 130
     },
     {
@@ -250,8 +254,8 @@
         "shield_damage": 2,
         "armor_damage": 2,
         "crew_damage": 0,
-        "anti-fighter": 0,
-        "anti-missile": 0,
+        "anti_fighter": 0,
+        "anti_missile": 0,
         "cost": 75
     },
     {
@@ -267,8 +271,8 @@
         "shield_damage": 0,
         "armor_damage": 0,
         "crew_damage": 2,
-        "anti-fighter": 3,
-        "anti-missile": 2,
+        "anti_fighter": 3,
+        "anti_missile": 2,
         "cost": 80
     },
     {
@@ -284,8 +288,8 @@
         "shield_damage": 0,
         "armor_damage": 0,
         "crew_damage": 0,
-        "anti-fighter": 3,
-        "anti-missile": 4,
+        "anti_fighter": 3,
+        "anti_missile": 4,
         "cost": 70
     },
     {
@@ -301,8 +305,8 @@
         "shield_damage": 0,
         "armor_damage": 0,
         "crew_damage": 0,
-        "anti-fighter": 3,
-        "anti-missile": 5,
+        "anti_fighter": 3,
+        "anti_missile": 5,
         "cost": 80
     }
 ]

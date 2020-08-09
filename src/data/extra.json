@@ -1,0 +1,47 @@
+[
+	{
+		"type": "extra",
+		"name": "Extra Crew",
+		"crewCapacity": 20,
+		"power": 5,
+		"cost": 100,
+		"extraLabel1": "Increase Crew",
+		"extraText1": "20"
+	},
+	{
+		"type": "extra",
+		"name": "Rocket Ammo",
+		"cost": 10,
+		"ammoType": "rocket",
+		"ammo": 10,
+		"extraLabel1": "Extra Ammo",
+		"extraText1": "10"
+	},
+	{
+		"type": "extra",
+		"name": "Nuke Ammo",
+		"cost": 20,
+		"ammoType": "nuke",
+		"ammo": 2,
+		"extraLabel1": "Extra Ammo",
+		"extraText1": "2"
+	},
+	{
+		"type": "extra",
+		"name": "Ship-to-Ship Missile Ammo",
+		"cost": 15,
+		"ammoType": "ship-to-ship",
+		"ammo": 5,
+		"extraLabel1": "Extra Ammo",
+		"extraText1": "5"
+	},
+	{
+		"type": "extra",
+		"name": "Torpedo Ammo",
+		"cost": 20,
+		"ammoType": "torpedo",
+		"ammo": 3,
+		"extraLabel1": "Extra Ammo",
+		"extraText1": "3"
+	}
+]

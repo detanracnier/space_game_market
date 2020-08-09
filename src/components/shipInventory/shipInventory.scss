@@ -1,9 +1,9 @@
 .ship_inventory_container {
     height: 100%;
-    width: 30%;
+    width: 29%;
     position: fixed;
     float: left;
-    top: 110px;
+    top: 130px;
     left: 0px;
 }
 
@@ -11,6 +11,16 @@
     font-size: 1em;
     margin: 0;
     padding-left: 20px;
+}
+
+.item_type_header {
+    background-color: #26004d;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 1.5em;;
+    padding-left: 20px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 .item_container {
@@ -28,7 +38,7 @@
 
 .item_cost_container {
     margin: 0;
-    padding-left:40%;
+    padding-left:25%;
     align-items: right;
     align-content: right;
     display: flex;
@@ -37,5 +47,5 @@
 .item_cost {
     font-size: 0.8em;
     float:left;
-    width:30%;
+    width:33%;
 }

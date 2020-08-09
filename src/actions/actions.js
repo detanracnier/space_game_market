@@ -32,6 +32,16 @@ export const updateCrew = (crew) => {
     }
 }
 
+export const updateCrewCapacity = (crewCapacity) => {
+
+    return {
+        type: 'update_crew_capacity',
+        payload: {
+            crewCapacity
+        }
+    }
+}
+
 export const updatePower = (power) => {
 
     return {
@@ -48,6 +58,17 @@ export const updatePowerCapacity = (powerCapacity) => {
         type: 'update_power_capacity',
         payload: {
             powerCapacity
+        }
+    }
+}
+
+export const updateAmmo = (ammoType, ammo) => {
+
+    return {
+        type: 'update_ammo',
+        payload: {
+            ammoType,
+            ammo
         }
     }
 }
