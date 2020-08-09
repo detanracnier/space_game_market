@@ -10,16 +10,21 @@ import Extra from '../items/extra';
 import { useDispatch } from 'react-redux';
 import { addToInventory, updateFunds, updateCrew, updateCrewCapacity, updatePower, updatePowerCapacity, updateAmmo } from '../../actions/actions';
 import './market.scss';
+import '../items/weapon.scss';
+import '../items/engine.scss';
+import '../items/reactor.scss';
+import '../items/extra.scss';
+
 
 export default function Market () {
     const dispatch = useDispatch();
 
     return (
         <div className="market_container">
-            <div className="item_type_header">Reactors:</div>
+            <div className="mk_item_type_header">Reactors:</div>
             {reactorList.map(reactor => {
                 return(
-                    <div className="item_container" onClick={() => {
+                    <div className="reactor_item_container" onClick={() => {
                         dispatch(addToInventory(reactor))
                         dispatch(updateFunds(reactor.cost))
                         dispatch(updateCrew(reactor.crew))
@@ -29,10 +34,10 @@ export default function Market () {
                     </div>
                 )
             })}
-            <div className="item_type_header">Engines:</div>
+            <div className="mk_item_type_header">Engines:</div>
             {engineList.map(engine => {
                 return(
-                    <div className="item_container" onClick={() => {
+                    <div className="engine_item_container" onClick={() => {
                         dispatch(addToInventory(engine))
                         dispatch(updateFunds(engine.cost))
                         dispatch(updateCrew(engine.crew))
@@ -42,10 +47,10 @@ export default function Market () {
                     </div>
                 )
             })}
-            <div className="item_type_header">Weapons:</div>
+            <div className="mk_item_type_header">Weapons:</div>
             {weaponsList.map(weapon => {
                 return(
-                    <div className="item_container" onClick={() => {
+                    <div className="weapon_item_container" onClick={() => {
                         dispatch(addToInventory(weapon))
                         dispatch(updateFunds(weapon.cost))
                         dispatch(updateCrew(weapon.crew))
@@ -56,10 +61,10 @@ export default function Market () {
                     </div>
                 )
             })}
-            <div className="item_type_header">Extras:</div>
+            <div className="mk_item_type_header">Extras:</div>
             {extraList.map(extra => {
                 return(
-                    <div className="item_container" onClick={() => {
+                    <div className="extra_item_container" onClick={() => {
                         dispatch(addToInventory(extra))
                         dispatch(updateFunds(extra.cost))
                         if (extra.crew){dispatch(updateCrew(extra.crew))}

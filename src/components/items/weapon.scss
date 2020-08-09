@@ -1,0 +1,9 @@
+.weapon_item_container {
+    border-style: solid;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+}
+
+.active, .weapon_item_container:hover {
+    background-color: #ffcccc;
+}

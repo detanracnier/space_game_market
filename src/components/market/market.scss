@@ -5,7 +5,7 @@
     height: 100%;
 }
 
-.item_type_header {
+.mk_item_type_header {
     background-color: #26004d;
     border-radius: 25px;
     color: #ffffff;
@@ -13,4 +13,8 @@
     padding-left: 20px;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+}
+
+.active, .mk_item_type_header:hover {
+    background-color:#400080;
 }
