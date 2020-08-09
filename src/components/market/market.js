@@ -6,7 +6,7 @@ import Weapon from '../items/weapon';
 import Engine from '../items/engine';
 import Reactor from '../items/reactor';
 import { useDispatch } from 'react-redux';
-import { addToInventory, updateResources } from '../../actions/actions';
+import { addToInventory, updateFunds, updateCrew, updatePower, updatePowerCapacity } from '../../actions/actions';
 import './market.scss';
 
 export default function Market () {
@@ -22,7 +22,9 @@ export default function Market () {
                 return(
                     <div className="item_container" onClick={() => {
                         dispatch(addToInventory(weapon))
-                        dispatch(updateResources(weapon.cost,weapon.crew,weapon.power))
+                        dispatch(updateFunds(weapon.cost))
+                        dispatch(updateCrew(weapon.crew))
+                        dispatch(updatePower(weapon.power))
                     }}>
                         <Weapon weaponItem={weapon} />
                     </div>
@@ -33,7 +35,9 @@ export default function Market () {
                 return(
                     <div className="item_container" onClick={() => {
                         dispatch(addToInventory(engine))
-                        dispatch(updateResources(engine.cost,engine.crew,engine.power))
+                        dispatch(updateFunds(engine.cost))
+                        dispatch(updateCrew(engine.crew))
+                        dispatch(updatePower(engine.power))
                     }}>
                         <Engine engineItem={engine} />
                     </div>
@@ -44,7 +48,9 @@ export default function Market () {
                 return(
                     <div className="item_container" onClick={() => {
                         dispatch(addToInventory(reactor))
-                        //dispatch(updateResources(reactor.cost,reactor.crew,reactor.power))
+                        dispatch(updateFunds(reactor.cost))
+                        dispatch(updateCrew(reactor.crew))
+                        dispatch(updatePowerCapacity(reactor.powerCapacity))
                     }}>
                         <Reactor reactorItem={reactor} />
                     </div>

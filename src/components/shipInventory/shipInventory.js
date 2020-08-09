@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './shipInventory.scss';
 import { useDispatch } from 'react-redux';
-import { removeFromInventory, updateResources } from '../../actions/actions';
+import { removeFromInventory, updateFunds, updateCrew, updatePower, updatePowerCapacity } from '../../actions/actions';
 
 export default function ShipInventory(){
     const weapons = useSelector(state => state.shipInventory.filter(item => item.type === "weapon"));
@@ -22,7 +22,9 @@ export default function ShipInventory(){
                     <React.Fragment>
                         <div className="item_container" onClick={() => {
                             dispatch(removeFromInventory(reactor.id))
-                            //dispatch(updateResources(engine.cost*-1,engine.crew,engine.power))
+                            dispatch(updateFunds(reactor.cost*-1))
+                            dispatch(updateCrew(reactor.crew*-1))
+                            dispatch(updatePowerCapacity(reactor.powerCapacity*-1))
                         }}>
                             <h2 className="item_name">{reactor.name}</h2>
                             <div className="item_cost_container">
@@ -40,7 +42,9 @@ export default function ShipInventory(){
                     <React.Fragment>
                         <div className="item_container" onClick={() => {
                             dispatch(removeFromInventory(engine.id))
-                            dispatch(updateResources(engine.cost*-1,engine.crew,engine.power))
+                            dispatch(updateFunds(engine.cost*-1))
+                            dispatch(updateCrew(engine.crew*-1))
+                            dispatch(updatePower(engine.power*-1))
                         }}>
                             <h2 className="item_name">{engine.name}</h2>
                             <div className="item_cost_container">
@@ -58,7 +62,9 @@ export default function ShipInventory(){
                     <React.Fragment>
                         <div className="item_container" onClick={() => {
                             dispatch(removeFromInventory(weapon.id))
-                            dispatch(updateResources(weapon.cost*-1,weapon.crew,weapon.power))
+                            dispatch(updateFunds(weapon.cost*-1))
+                            dispatch(updateCrew(weapon.crew*-1))
+                            dispatch(updatePower(weapon.power*-1))
                         }}>
                             <h2 className="item_name">{weapon.name}</h2>
                             <div className="item_cost_container">

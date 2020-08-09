@@ -12,13 +12,42 @@ export const removeFromInventory = (id) => {
     }
 }
 
-export const updateResources = (cost,crew,power) => {
+export const updateFunds = (cost) => {
+
     return {
-        type: 'update_resources',
+        type: 'update_funds',
         payload: {
-            cost,
-            crew,
-            power,
+            cost
+        }
+    }
+}
+
+export const updateCrew = (crew) => {
+
+    return {
+        type: 'update_crew',
+        payload: {
+            crew
+        }
+    }
+}
+
+export const updatePower = (power) => {
+
+    return {
+        type: 'update_power',
+        payload: {
+            power
+        }
+    }
+}
+
+export const updatePowerCapacity = (powerCapacity) => {
+
+    return {
+        type: 'update_power_capacity',
+        payload: {
+            powerCapacity
         }
     }
 }
