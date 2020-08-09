@@ -1,17 +1,12 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { addToInventory } from '../../actions/actions';
 import './item.scss';
 
 export default function Weapon(props){
 
     const weapon = props.weaponItem;
-    const dispatch = useDispatch();
 
     return(
-        <div className="item_container" onClick={() => {
-            dispatch(addToInventory(weapon))
-        }}>
+        <React.Fragment>
             <h2 className="item_name">{weapon.name}</h2>
             <table className="item_table">
                 <thead>
@@ -54,9 +49,6 @@ export default function Weapon(props){
                     </tr>
                 </tbody>
             </table>
-
-
-
-        </div>
+        </React.Fragment>
     )
 }

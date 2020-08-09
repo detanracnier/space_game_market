@@ -11,3 +11,14 @@ export const removeFromInventory = (id) => {
         payload: id,
     }
 }
+
+export const updateResources = (cost,crew,power) => {
+    return {
+        type: 'update_resources',
+        payload: {
+            cost,
+            crew,
+            power,
+        }
+    }
+}

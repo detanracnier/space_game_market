@@ -11,7 +11,6 @@ const shipInventoryReducer = (state = [], action) => {
         case "remove_from_inventory":
             return state.filter(item => item.id !== action.payload)
 
-
         default:
             return state;
     }

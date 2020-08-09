@@ -1,0 +1,44 @@
+[
+    {
+        "type": "reactor",
+        "name": "Mark I Generator",
+        "crew": 24,
+        "powerCapacity": 45,
+        "cost": 300
+    },
+    {
+        "type": "reactor",
+        "name": "Mark II Generator",
+        "crew": 28,
+        "powerCapacity": 55,
+        "cost": 320
+    },
+    {
+        "type": "reactor",
+        "name": "Mark III Generator",
+        "crew": 32,
+        "powerCapacity": 70,
+        "cost": 365
+    },
+    {
+        "type": "reactor",
+        "name": "Mark IV Generator",
+        "crew": 40,
+        "powerCapacity": 90,
+        "cost": 375
+    },
+    {
+        "type": "reactor",
+        "name": "Mark V Generator",
+        "crew": 45,
+        "powerCapacity": 115,
+        "cost": 440
+    },
+    {
+        "type": "reactor",
+        "name": "Mark VI Generator",
+        "crew": 40,
+        "powerCapacity": 125,
+        "cost": 550
+    }
+]

@@ -1,5 +1,6 @@
 [
     {
+        "type": "engine",
         "name": "Frigate Ion Engine Mark I",
         "crew": 10,
         "power": 10,
@@ -9,6 +10,7 @@
         "cost": 240
     },
     {
+        "type": "engine",
         "name": "Frigate Ion Engine Mark II",
         "crew": 15,
         "power": 15,
@@ -18,6 +20,7 @@
         "cost": 320
     },
     {
+        "type": "engine",
         "name": "Frigate Ion Engine Mark III",
         "crew": 10,
         "power": 10,
@@ -27,6 +30,7 @@
         "cost": 350
     },
     {
+        "type": "engine",
         "name": "Frigate EVE Mark I",
         "crew": 12,
         "power": 20,
@@ -36,6 +40,7 @@
         "cost": 400
     },
     {
+        "type": "engine",
         "name": "Frigate EVE Mark II",
         "crew": 18,
         "power": 25,
@@ -45,6 +50,7 @@
         "cost": 400
     },
     {
+        "type": "engine",
         "name": "Frigate EVE Mark III",
         "crew": 15,
         "power": 30,

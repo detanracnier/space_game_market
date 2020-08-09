@@ -1,5 +1,6 @@
 [
     {
+        "type": "weapon",
         "name": "Nuclear Missile",
         "crew": 10,
         "power": 6,
@@ -16,6 +17,7 @@
         "cost": 100
     },
     {
+        "type": "weapon",
         "name": "Ship-to-Ship Missile",
         "crew": 10,
         "power": 6,
@@ -32,6 +34,7 @@
         "cost": 75
     },
     {
+        "type": "weapon",
         "name": "Rocket",
         "crew": 5,
         "power": 4,
@@ -48,6 +51,7 @@
         "cost": 70
     },
     {
+        "type": "weapon",
         "name": "Torpedo",
         "crew": 10,
         "power": 8,
@@ -64,6 +68,7 @@
         "cost": 90
     },
     {
+        "type": "weapon",
         "name": "Mezon Gun",
         "crew": 15,
         "power": 30,
@@ -80,6 +85,7 @@
         "cost": 130
     },
     {
+        "type": "weapon",
         "name": "Railgun",
         "crew": 20,
         "power": 20,
@@ -96,6 +102,7 @@
         "cost": 100
     },
     {
+        "type": "weapon",
         "name": "Heavy Railgun",
         "crew": 40,
         "power": 50,
@@ -112,6 +119,7 @@
         "cost": 170
     },
     {
+        "type": "weapon",
         "name": "Laser",
         "crew": 10,
         "power": 12,
@@ -128,6 +136,7 @@
         "cost": 70
     },
     {
+        "type": "weapon",
         "name": "Assault Guns",
         "crew": 15,
         "power": 8,
@@ -144,6 +153,7 @@
         "cost": 70
     },
     {
+        "type": "weapon",
         "name": "Heavy Assault Guns",
         "crew": 15,
         "power": 12,
@@ -160,6 +170,7 @@
         "cost": 100
     },
     {
+        "type": "weapon",
         "name": "Heavy Laser",
         "crew": 22,
         "power": 30,
@@ -176,6 +187,7 @@
         "cost": 80
     },
     {
+        "type": "weapon",
         "name": "Plasma Bore Cannon",
         "crew": 15,
         "power": 20,
@@ -192,6 +204,7 @@
         "cost": 120
     },
     {
+        "type": "weapon",
         "name": "Plasma Smartbomb",
         "crew": 12,
         "power": 15,
@@ -208,6 +221,7 @@
         "cost": 110
     },
     {
+        "type": "weapon",
         "name": "Broadside Cannons",
         "crew": 30,
         "power": 10,
@@ -224,6 +238,7 @@
         "cost": 130
     },
     {
+        "type": "weapon",
         "name": "Pulse Laser",
         "crew": 15,
         "power": 20,
@@ -240,6 +255,7 @@
         "cost": 75
     },
     {
+        "type": "weapon",
         "name": "Flak Gun",
         "crew": 10,
         "power": 3,
@@ -256,6 +272,7 @@
         "cost": 80
     },
     {
+        "type": "weapon",
         "name": "Vulcan Cannon",
         "crew": 10,
         "power": 10,
@@ -272,6 +289,7 @@
         "cost": 70
     },
     {
+        "type": "weapon",
         "name": "Point Defense Laser",
         "crew": 10,
         "power": 8,

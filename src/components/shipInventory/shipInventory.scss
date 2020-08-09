@@ -1,15 +1,15 @@
 .ship_inventory_container {
     height: 100%;
     width: 30%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    float: left;
+    top: 110px;
+    left: 0px;
 }
 
 .header {
     font-size: 1em;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
 }
 
 .item_container {

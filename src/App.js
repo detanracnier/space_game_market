@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import ShipInventory from './components/ship/shipInventory';
+import ResourceTracker from './components/resourceTracker/resourceTracker';
+import ShipInventory from './components/shipInventory/shipInventory';
 import Market from './components/market/market';
 
 function App() {
 	return (
 		<div>
+			<ResourceTracker />
 			<ShipInventory />
 			<Market />
 		</div>

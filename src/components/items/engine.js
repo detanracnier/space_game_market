@@ -1,17 +1,12 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { addToInventory } from '../../actions/actions';
 import './item.scss';
 
 export default function Engine(props){
 
     const engine = props.engineItem;
-    const dispatch = useDispatch();
 
     return(
-        <div className="item_container" onClick={() => {
-            dispatch(addToInventory(engine))
-        }}>
+        <React.Fragment>
             <h2 className="item_name">{engine.name}</h2>
             <table className="item_table">
                 <thead>
@@ -40,6 +35,6 @@ export default function Engine(props){
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </React.Fragment>
     )
 }
