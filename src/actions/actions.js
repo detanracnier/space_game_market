@@ -72,3 +72,22 @@ export const updateAmmo = (ammoType, ammo) => {
         }
     }
 }
+
+export const collapseMenu = (menu) => {
+
+    return {
+        type: 'collapse_menu',
+        payload: {
+            menu
+        }
+    }
+}
+
+export const updateShip = (ship) => {
+    return {
+        type: 'update_ship',
+        payload: {
+            ship
+        }
+    }
+}

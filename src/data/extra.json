@@ -6,7 +6,9 @@
 		"power": 5,
 		"cost": 100,
 		"extraLabel1": "Increase Crew",
-		"extraText1": "20"
+		"extraText1": "20",
+		"extraLabel2": "Power",
+		"extraText2": "5"
 	},
 	{
 		"type": "extra",

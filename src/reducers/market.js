@@ -5,12 +5,12 @@ const marketReducer = (state = {
     extrasCollapse: true,
 }, action) => {
     switch(action.type){
-        case "update_funds":
+        case "collapse_menu":
+
             return{
                     ...state,
-                    funds: state.funds-action.payload.cost
+                    [action.payload.menu]: !state[action.payload.menu],
             }
-
 
         default:
             return state;

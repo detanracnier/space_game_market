@@ -1,0 +1,29 @@
+[
+    {
+        "type": "ship",
+        "name": "Federation 1",
+        "class": "frigate",
+        "crewCapacity": 110,
+        "armor": 17,
+        "hull": 23,
+        "cost": 600
+    },
+    {
+        "type": "ship",
+        "name": "Corporation 1",
+        "class": "frigate",
+        "crewCapacity": 120,
+        "armor": 15,
+        "hull": 25,
+        "cost": 600
+    },
+    {
+        "type": "ship",
+        "name": "Ivorian 1",
+        "class": "frigate",
+        "crewCapacity": 100,
+        "armor": 20,
+        "hull": 22,
+        "cost": 600
+    }
+]

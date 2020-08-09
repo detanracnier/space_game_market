@@ -18,7 +18,7 @@ export default function ResourceTracker(){
 			<div className="ammo_text">Nukes: {nukeAmmo}</div>
 			<div className="resource_text">Funds Available: {funds}</div>
 			<div className="ammo_text">Ship-to-Ship Missiles: {shiptoshipAmmo}</div>
-			<div className="resource_text">Power Consumption: {powerCapacity-powerComsumed} / {powerCapacity}</div>
+			<div className="resource_text">Power Consumption: {powerCapacity-powerComsumed} / {powerCapacity} {powerCapacity===0 ? "<--- You'll need a reactor" : ""}</div>
 			<div className="ammo_text">Rockets: {rocketAmmo}</div>
 			<div className="resource_text">Crew Availabile: {crewCapacity-crew} / {crewCapacity}</div>
 			<div className="ammo_text">Torpedos: {torpedoAmmo}</div>

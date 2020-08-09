@@ -1,6 +1,6 @@
 .market_container {
     float: right;
-    margin-top: 130px;
+    margin-top: 219px;
     width: 70%;
     height: 100%;
 }
@@ -11,10 +11,22 @@
     color: #ffffff;
     font-size: 1.5em;;
     padding-left: 20px;
+    padding-bottom: 3px;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
 
 .active, .mk_item_type_header:hover {
     background-color:#400080;
+}
+
+.hidden {
+    display: none;
+}
+
+.collapsable_icon {
+    float:right;
+    padding-right: 10px;
+    font-size: 1em;
+    color: #ffffff;
 }

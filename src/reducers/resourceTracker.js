@@ -1,11 +1,9 @@
 const resourceTrackerReducer = (state = {
-    funds: 1600,
-    shipClass: 'frigate',
-    shipName: 'Pirate Ship',
+    funds: 2200,
     power: 0,
     powerCapacity: 0,
     crew: 0,
-    crewCapacity: 110,
+    crewCapacity: 0,
     ammo_nuke: 0,
     ammo_ship_to_ship: 0,
     ammo_rocket: 0,
@@ -61,6 +59,11 @@ const resourceTrackerReducer = (state = {
                     }
                 default:
                     return state;
+            }
+        case "update_ship":
+            return{
+                ...state,
+                crewCapacity: action.payload.ship[0].crewCapacity
             }
 
         default:
