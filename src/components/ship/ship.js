@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateShip } from '../../actions/actions';
 import './ship.scss';
 
-export default function Ship(){
+export default function Ship() {
 	const ship = useSelector(state => state.ship);
 	const dispatch = useDispatch();
 
@@ -12,17 +12,20 @@ export default function Ship(){
 		const selectedShip = shipsList.filter(ship => ship.name === event.currentTarget.value);
 		dispatch(updateShip(selectedShip))
 	}
+
 	return(
 		<React.Fragment>
 			<div className="ship_container">
 				<form>
 					<label>Choose a Ship: </label>
 					<select onChange={handleChange}>
-						{shipsList.map(ship => {
-							return (
-								<option value={ship.name}>{ship.name} - {ship.class}</option>
-							)
-						})}
+						{
+							shipsList.map(ship => {
+								return (
+									<option key={ship.name} value={ship.name}>{ship.name} - {ship.class}</option>
+								)
+							})
+						}
 					</select>
 				</form>
 				<div className="ship_name">Ship: {ship.shipName}</div>

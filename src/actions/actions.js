@@ -1,19 +1,22 @@
 export const addToInventory = (item) => {
     return {
         type: 'add_to_inventory',
-        payload: item,
+        payload: {
+            item
+        }
     }
 }
 
 export const removeFromInventory = (id) => {
     return {
         type: 'remove_from_inventory',
-        payload: id,
+        payload: {
+            id
+        }
     }
 }
 
 export const updateFunds = (cost) => {
-
     return {
         type: 'update_funds',
         payload: {
@@ -23,7 +26,6 @@ export const updateFunds = (cost) => {
 }
 
 export const updateCrew = (crew) => {
-
     return {
         type: 'update_crew',
         payload: {
@@ -33,7 +35,6 @@ export const updateCrew = (crew) => {
 }
 
 export const updateCrewCapacity = (crewCapacity) => {
-
     return {
         type: 'update_crew_capacity',
         payload: {
@@ -43,7 +44,6 @@ export const updateCrewCapacity = (crewCapacity) => {
 }
 
 export const updatePower = (power) => {
-
     return {
         type: 'update_power',
         payload: {
@@ -53,7 +53,6 @@ export const updatePower = (power) => {
 }
 
 export const updatePowerCapacity = (powerCapacity) => {
-
     return {
         type: 'update_power_capacity',
         payload: {
@@ -63,7 +62,6 @@ export const updatePowerCapacity = (powerCapacity) => {
 }
 
 export const updateAmmo = (ammoType, ammo) => {
-
     return {
         type: 'update_ammo',
         payload: {
@@ -74,7 +72,6 @@ export const updateAmmo = (ammoType, ammo) => {
 }
 
 export const collapseMenu = (menu) => {
-
     return {
         type: 'collapse_menu',
         payload: {
@@ -87,7 +84,16 @@ export const updateShip = (ship) => {
     return {
         type: 'update_ship',
         payload: {
-            ship
+            ship: ship[0]
+        }
+    }
+}
+
+export const reactorItemClicked = (reactor) => {
+    return {
+        type: 'reactor_item_clicked',
+        payload: {
+            reactor
         }
     }
 }

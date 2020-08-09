@@ -1,22 +1,19 @@
 
-
-const shipReducer = (state = {
+const initialState = {
     shipClass: '',
     shipName: '',
     armor: '',
     hull: '',
-}, action) => {
+};
+
+const shipReducer = (state = initialState, action) => {
     switch(action.type){
         case "update_ship":
-            return{
-                    ...state,
-                    shipClass: action.payload.ship[0].class,
-                    shipName: action.payload.ship[0].name,
-                    armor: action.payload.ship[0].armor,
-                    hull: action.payload.ship[0].hull,
-            }
+            state.ship = action.payload.ship
+            return state;
         default:
             return state;
     }
 }
+
 export default shipReducer;

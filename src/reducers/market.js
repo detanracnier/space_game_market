@@ -1,19 +1,19 @@
-const marketReducer = (state = {
+
+const initialState = {
     reactorsCollapse: true,
     enginesCollapse: true,
     weaponsCollapse: true,
-    extrasCollapse: true,
-}, action) => {
+    extrasCollapse: true
+}
+
+const MarketReducer = (state = initialState, action) => {
     switch(action.type){
         case "collapse_menu":
-
-            return{
-                    ...state,
-                    [action.payload.menu]: !state[action.payload.menu],
-            }
-
-        default:
+            state.menu = !state.menu;
+            return state;
+        default: 
             return state;
     }
 }
-export default marketReducer;
+
+export default MarketReducer;

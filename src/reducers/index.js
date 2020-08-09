@@ -10,4 +10,5 @@ const allReducers = combineReducers({
     market: marketReducer,
     ship: shipReducer,
 })
+
 export default allReducers

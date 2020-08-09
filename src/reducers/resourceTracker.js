@@ -1,4 +1,5 @@
-const resourceTrackerReducer = (state = {
+
+const initialState = {
     funds: 2200,
     power: 0,
     powerCapacity: 0,
@@ -8,7 +9,9 @@ const resourceTrackerReducer = (state = {
     ammo_ship_to_ship: 0,
     ammo_rocket: 0,
     ammo_torpedo: 0,
-}, action) => {
+};
+
+const resourceTrackerReducer = (state = initialState, action) => {
     switch(action.type){
         case "update_funds":
             return{
@@ -63,7 +66,7 @@ const resourceTrackerReducer = (state = {
         case "update_ship":
             return{
                 ...state,
-                crewCapacity: action.payload.ship[0].crewCapacity
+                crewCapacity: action.payload.ship.crewCapacity
             }
 
         default:
