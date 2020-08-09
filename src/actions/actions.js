@@ -91,7 +91,7 @@ export const updateShip = (ship) => {
 
 export const reactorItemClicked = (reactor) => {
     return {
-        type: 'reactor_item_clicked',
+        type: 'REACTOR_ITEM_CLICKED',
         payload: {
             reactor
         }

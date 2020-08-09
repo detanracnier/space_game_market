@@ -26,7 +26,8 @@ export default function Market () {
 
 	return (
 		<div className="market_container">
-			<div className="mk_item_type_header" 
+			<div 
+				className="mk_item_type_header" 
 				onClick={()=> dispatch(collapseMenu("reactorsCollapse"))}>
 					Reactors:
 				<div className="collapsable_icon">{reactorsCollapse ? "+" : "-"}</div>

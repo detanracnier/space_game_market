@@ -3,17 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import allReducers from './reducers/index';
 import { Provider } from 'react-redux';
+import logger from 'redux-logger';
 
 const store = createStore(
 	allReducers,
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+	applyMiddleware(logger)
 );
 
 ReactDOM.render(
-
 	<React.StrictMode>
 	<Provider store={store}>
 		<App />
