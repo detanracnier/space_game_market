@@ -1,7 +1,7 @@
 import React from 'react';
 import shipsList from '../../data/ships';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateShip } from '../../actions/actions';
+import { shipSelected } from '../../actions/actions';
 import './ship.scss';
 
 export default function Ship(){
@@ -10,7 +10,7 @@ export default function Ship(){
 
 	const handleChange = (event) => {
 		const selectedShip = shipsList.filter(ship => ship.name === event.currentTarget.value);
-		dispatch(updateShip(selectedShip))
+		dispatch(shipSelected(selectedShip))
 	}
 	return(
 		<React.Fragment>

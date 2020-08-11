@@ -7,7 +7,7 @@ const shipReducer = (state = {
     hull: '',
 }, action) => {
     switch(action.type){
-        case "update_ship":
+        case "SHIP_SELECTED":
             return{
                     ...state,
                     shipClass: action.payload.ship[0].class,

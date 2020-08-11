@@ -1,93 +1,96 @@
-export const addToInventory = (item) => {
-    return {
-        type: 'add_to_inventory',
-        payload: item,
-    }
-}
-
-export const removeFromInventory = (id) => {
-    return {
-        type: 'remove_from_inventory',
-        payload: id,
-    }
-}
-
-export const updateFunds = (cost) => {
-
-    return {
-        type: 'update_funds',
-        payload: {
-            cost
+export const marketItemClicked = (item) => {
+    switch(item.type){
+        case "reactor":
+            return {
+                type: 'MARKET_ITEM_CLICKED_REACTOR',
+                payload: {
+                    item,
+                }
+            }
+        case "engine":
+            return {
+                type: 'MARKET_ITEM_CLICKED_ENGINE',
+                payload: {
+                    item,
+                }
+            }
+            case "weapon":
+        return {
+            type: 'MARKET_ITEM_CLICKED_WEAPON',
+            payload: {
+                item,
+            }
         }
-    }
-}
-
-export const updateCrew = (crew) => {
-
-    return {
-        type: 'update_crew',
-        payload: {
-            crew
+        case "extra crew":
+        return {
+            type: 'MARKET_ITEM_CLICKED_EXTRA_CREW',
+            payload: {
+                item,
+            }
         }
-    }
-}
-
-export const updateCrewCapacity = (crewCapacity) => {
-
-    return {
-        type: 'update_crew_capacity',
-        payload: {
-            crewCapacity
+        case "extra ammo":
+        return {
+            type: 'MARKET_ITEM_CLICKED_EXTRA_AMMO',
+            payload: {
+                item,
+            }
         }
+        default:
+            return {
+                type: 'failsafe'
+            }
     }
 }
 
-export const updatePower = (power) => {
-
-    return {
-        type: 'update_power',
-        payload: {
-            power
+export const inventoryItemClicked = (item) => {
+    switch(item.type){
+        case "reactor":
+            return {
+                type: 'INVENTORY_ITEM_CLICKED_REACTOR',
+                payload: {
+                    item,
+                }
+            }
+        case "engine":
+            return {
+                type: 'INVENTORY_ITEM_CLICKED_ENGINE',
+                payload: {
+                    item,
+                }
+            }
+            case "weapon":
+        return {
+            type: 'INVENTORY_ITEM_CLICKED_WEAPON',
+            payload: {
+                item,
+            }
         }
-    }
-}
-
-export const updatePowerCapacity = (powerCapacity) => {
-
-    return {
-        type: 'update_power_capacity',
-        payload: {
-            powerCapacity
+        case "extra crew":
+        return {
+            type: 'INVENTORY_ITEM_CLICKED_EXTRA_CREW',
+            payload: {
+                item,
+            }
         }
-    }
-}
-
-export const updateAmmo = (ammoType, ammo) => {
-
-    return {
-        type: 'update_ammo',
-        payload: {
-            ammoType,
-            ammo
+        case "extra ammo":
+        return {
+            type: 'INVENTORY_ITEM_CLICKED_EXTRA_AMMO',
+            payload: {
+                item,
+            }
         }
+        default:
+            return {
+                type: 'failsafe'
+            }
     }
 }
 
-export const collapseMenu = (menu) => {
-
+export const shipSelected = (ship) => {
     return {
-        type: 'collapse_menu',
+        type: "SHIP_SELECTED",
         payload: {
-            menu
-        }
-    }
-}
-
-export const updateShip = (ship) => {
-    return {
-        type: 'update_ship',
-        payload: {
-            ship
+            ship,
         }
     }
 }

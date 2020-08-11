@@ -1,6 +1,6 @@
 [
 	{
-		"type": "extra",
+		"type": "extra crew",
 		"name": "Extra Crew",
 		"crewCapacity": 20,
 		"power": 5,
@@ -11,38 +11,46 @@
 		"extraText2": "5"
 	},
 	{
-		"type": "extra",
+		"type": "extra ammo",
 		"name": "Rocket Ammo",
 		"cost": 10,
-		"ammoType": "rocket",
-		"ammo": 10,
+		"ammo_nuke": 0,
+        "ammo_rocket": 10,
+        "ammo_torpedo": 0,
+        "ammo_shiptoship": 0,
 		"extraLabel1": "Extra Ammo",
 		"extraText1": "10"
 	},
 	{
-		"type": "extra",
+		"type": "extra ammo",
 		"name": "Nuke Ammo",
 		"cost": 20,
-		"ammoType": "nuke",
-		"ammo": 2,
+		"ammo_nuke": 2,
+        "ammo_rocket": 0,
+        "ammo_torpedo": 0,
+        "ammo_shiptoship": 0,
 		"extraLabel1": "Extra Ammo",
 		"extraText1": "2"
 	},
 	{
-		"type": "extra",
+		"type": "extra ammo",
 		"name": "Ship-to-Ship Missile Ammo",
 		"cost": 15,
-		"ammoType": "ship-to-ship",
-		"ammo": 5,
+		"ammo_nuke": 0,
+        "ammo_rocket": 0,
+        "ammo_torpedo": 0,
+        "ammo_shiptoship": 5,
 		"extraLabel1": "Extra Ammo",
 		"extraText1": "5"
 	},
 	{
-		"type": "extra",
+		"type": "extra ammo",
 		"name": "Torpedo Ammo",
 		"cost": 20,
-		"ammoType": "torpedo",
-		"ammo": 3,
+		"ammo_nuke": 0,
+        "ammo_rocket": 0,
+        "ammo_torpedo": 3,
+        "ammo_shiptoship": 0,
 		"extraLabel1": "Extra Ammo",
 		"extraText1": "3"
 	}
