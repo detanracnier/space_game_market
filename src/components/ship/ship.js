@@ -10,7 +10,7 @@ export default function Ship(){
 
 	const handleChange = (event) => {
 		const selectedShip = shipsList.filter(ship => ship.name === event.currentTarget.value);
-		dispatch(shipSelected(selectedShip))
+		dispatch(shipSelected(selectedShip[0]))
 	}
 	return(
 		<React.Fragment>
@@ -18,6 +18,7 @@ export default function Ship(){
 				<form>
 					<label>Choose a Ship: </label>
 					<select onChange={handleChange}>
+						<option selected="true" disabled="disabled">-choose ship-</option>
 						{shipsList.map(ship => {
 							return (
 								<option value={ship.name}>{ship.name} - {ship.class}</option>

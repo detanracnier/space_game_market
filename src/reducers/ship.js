@@ -5,15 +5,17 @@ const shipReducer = (state = {
     shipName: '',
     armor: '',
     hull: '',
+    crewCapacity: '',
 }, action) => {
     switch(action.type){
         case "SHIP_SELECTED":
             return{
                     ...state,
-                    shipClass: action.payload.ship[0].class,
-                    shipName: action.payload.ship[0].name,
-                    armor: action.payload.ship[0].armor,
-                    hull: action.payload.ship[0].hull,
+                    shipClass: action.payload.ship.class,
+                    shipName: action.payload.ship.name,
+                    armor: action.payload.ship.armor,
+                    hull: action.payload.ship.hull,
+                    crewCapacity: action.payload.ship.crewCapacity,
             }
         default:
             return state;

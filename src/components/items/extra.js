@@ -3,7 +3,7 @@ import './item.scss';
 
 export default function Extra(props){
 
-    const extra = props.extraItem;
+    const extra = props.item;
 
     return(
         <React.Fragment>

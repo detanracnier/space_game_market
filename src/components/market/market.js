@@ -10,10 +10,10 @@ export default function Market () {
 
 	return (
 		<div className="market_container">
-			<ItemGroup header="Reactors" itemList={reactorList} />
-			<ItemGroup header="Engines" itemList={engineList} />
-			<ItemGroup header="Weapons" itemList={weaponList} />
-			<ItemGroup header="Extras" itemList={extrasList} />
+			<ItemGroup id="reactor" header="Reactors" itemList={reactorList} />
+			<ItemGroup id="engine" header="Engines" itemList={engineList} />
+			<ItemGroup id="weapon" header="Weapons" itemList={weaponList} />
+			<ItemGroup id="extra" header="Extras" itemList={extrasList} />
 		</div>
 	)
 }

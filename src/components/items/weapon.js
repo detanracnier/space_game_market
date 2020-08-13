@@ -3,8 +3,13 @@ import './item.scss';
 
 export default function Weapon(props){
 
-    const weapon = props.weaponItem;
-
+    const weapon = props.item;
+    const getAmmo = () => {
+        if(weapon.ammo_nuke > 0){return (<td>{weapon.ammo_nuke}</td>)}
+        if(weapon.ammo_rocket > 0){return (<td>{weapon.ammo_rocket}</td>)}
+        if(weapon.ammo_torpedo > 0){return (<td>{weapon.ammo_torpedo}</td>)}
+        if(weapon.ammo_shiptoship > 0){return (<td>{weapon.ammo_shiptoship}</td>)}
+    }
     return(
         <React.Fragment>
             <h2 className="item_name">{weapon.name}</h2>
@@ -40,6 +45,7 @@ export default function Weapon(props){
                     </tr>
                     <tr>
                         <td>{weapon.rate_of_fire}</td>
+                        {getAmmo()}
                         <td>{weapon.ammo}</td>
                         <td>{weapon.speed}</td>
                         <td>{weapon.percision}</td>

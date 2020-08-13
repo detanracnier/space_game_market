@@ -1,11 +1,11 @@
 const marketReducer = (state = {
-    reactorsCollapse: true,
-    enginesCollapse: true,
-    weaponsCollapse: true,
-    extrasCollapse: true,
+    reactorCollection: false,
+    engineCollection: false,
+    weaponCollection: false,
+    extraCollection: false,
 }, action) => {
     switch(action.type){
-        case "collapse_menu":
+        case "MARKET_HEADER_CLICKED":
 
             return{
                     ...state,

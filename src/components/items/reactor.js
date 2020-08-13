@@ -2,7 +2,7 @@ import React from 'react';
 import './item.scss';
 
 export default function Reactor(props){
-    const reactor = props.reactorItem;
+    const reactor = props.item;
 
     return(
         <React.Fragment>

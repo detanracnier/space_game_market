@@ -1,8 +1,15 @@
 const crewReducer = (state = {
     crew: 0,
     crewCapacity: 0,
+    shipCrewCapacity: 0,
 }, action) => {
     switch(action.type){
+        case "SHIP_SELECTED":
+            return{
+                ...state,
+                crewCapacity: state.crewCapacity+(action.payload.ship.crewCapacity-state.shipCrewCapacity),
+                shipCrewCapacity: action.payload.ship.crewCapacity,
+            }
         case "MARKET_ITEM_CLICKED_REACTOR":
             return{
                 ...state,

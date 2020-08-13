@@ -94,3 +94,14 @@ export const shipSelected = (ship) => {
         }
     }
 }
+
+export const marketCollectionHeaderClicked = (id) => {
+    const menu = id + "Collection";
+
+    return {
+        type: "MARKET_HEADER_CLICKED",
+        payload: {
+            menu,
+        }
+    }
+}

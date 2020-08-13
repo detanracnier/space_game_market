@@ -3,7 +3,7 @@ import './item.scss';
 
 export default function Engine(props){
 
-    const engine = props.engineItem;
+    const engine = props.item;
 
     return(
         <React.Fragment>
