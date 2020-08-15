@@ -6,42 +6,42 @@ const powerReducer = (state = {
         case "MARKET_ITEM_CLICKED_REACTOR":
             return{
                 ...state,
-                powerCapacity: state.powerCapacity+action.payload.item.powerCapacity
+                powerCapacity: state.powerCapacity + action.payload.item.powerCapacity
             }
         case "INVENTORY_ITEM_CLICKED_REACTOR":
             return{
                 ...state,
-                powerCapacity: state.powerCapacity-action.payload.item.powerCapacity
+                powerCapacity: state.powerCapacity - action.payload.item.powerCapacity
             }
         case "MARKET_ITEM_CLICKED_ENGINE":
             return{
                 ...state,
-                power: state.power+action.payload.item.power
+                power: state.power + action.payload.item.power
             }
         case "INVENTORY_ITEM_CLICKED_ENGINE":
             return{
                 ...state,
-                power: state.power-action.payload.item.power
+                power: state.power - action.payload.item.power
             }
         case "MARKET_ITEM_CLICKED_WEAPON":
             return{
                 ...state,
-                power: state.power+action.payload.item.power
+                power: state.power + action.payload.item.power
             }
         case "INVENTORY_ITEM_CLICKED_WEAPON":
             return{
                 ...state,
-                power: state.power-action.payload.item.power
+                power: state.power - action.payload.item.power
             }
         case "MARKET_ITEM_CLICKED_EXTRA_CREW":
             return{
                 ...state,
-                power: state.power+action.payload.item.power
+                power: state.power + action.payload.item.power
             }
         case "INVENTORY_ITEM_CLICKED_EXTRA_CREW":
             return{
                 ...state,
-                power: state.power-action.payload.item.power
+                power: state.power - action.payload.item.power
             }
         default:
             return state;

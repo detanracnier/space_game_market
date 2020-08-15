@@ -5,7 +5,6 @@ import ShipInventory from './components/shipInventory/shipInventory';
 import ResourceTracker from './components/resourceTracker/resourceTracker';
 import Market from './components/market/market';
 
-
 function App() {
 	return (
 		<div>

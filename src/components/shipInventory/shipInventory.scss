@@ -1,7 +1,8 @@
 .ship_inventory_container {
-    height: 100%;
+    height: 75%;
     width: 29%;
     position: fixed;
+    overflow: auto;
     float: left;
     top: 10em;
     left: 0px;
