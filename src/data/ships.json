@@ -1,5 +1,6 @@
 [
     {
+        "id": "federation_frigate",
         "type": "ship",
         "name": "Federation 1",
         "class": "frigate",
@@ -9,6 +10,7 @@
         "cost": 600
     },
     {
+        "id": "corporation_frigate",
         "type": "ship",
         "name": "Corporation 1",
         "class": "frigate",
@@ -18,6 +20,7 @@
         "cost": 600
     },
     {
+        "id": "ivorian_frigate",
         "type": "ship",
         "name": "Ivorian 1",
         "class": "frigate",

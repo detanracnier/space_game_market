@@ -86,11 +86,12 @@ export const inventoryItemClicked = (item) => {
     }
 }
 
-export const shipSelected = (ship) => {
+export const shipSelected = (ship, image) => {
     return {
         type: "SHIP_SELECTED",
         payload: {
             ship,
+            image,
         }
     }
 }

@@ -1,6 +1,6 @@
 .resource_tracker_container {
     width: 49%;
-    height: 7em;
+    height: 10%;
     left: 50%;
     float: left;
     position: fixed;
@@ -21,4 +21,9 @@
     color: #ffffff;
     float: right;
     padding-right: 30px;
+}
+
+.reactor_warning {
+    font-size: 70%;
+    color: #e6e600;
 }
