@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/space_game_market/static/css/main.983884e1.chunk.css",
+    "main.js": "/space_game_market/static/js/main.03fda149.chunk.js",
+    "main.js.map": "/space_game_market/static/js/main.03fda149.chunk.js.map",
+    "runtime-main.js": "/space_game_market/static/js/runtime-main.ab130184.js",
+    "runtime-main.js.map": "/space_game_market/static/js/runtime-main.ab130184.js.map",
+    "static/js/2.f98c0228.chunk.js": "/space_game_market/static/js/2.f98c0228.chunk.js",
+    "static/js/2.f98c0228.chunk.js.map": "/space_game_market/static/js/2.f98c0228.chunk.js.map",
+    "index.html": "/space_game_market/index.html",
+    "precache-manifest.e420fb5dac285602e89e1cafda907d75.js": "/space_game_market/precache-manifest.e420fb5dac285602e89e1cafda907d75.js",
+    "service-worker.js": "/space_game_market/service-worker.js",
+    "static/css/main.983884e1.chunk.css.map": "/space_game_market/static/css/main.983884e1.chunk.css.map",
+    "static/js/2.f98c0228.chunk.js.LICENSE.txt": "/space_game_market/static/js/2.f98c0228.chunk.js.LICENSE.txt",
+    "static/media/corporation_frigate.jpg": "/space_game_market/static/media/corporation_frigate.a65f4c30.jpg",
+    "static/media/federation_frigate.jpg": "/space_game_market/static/media/federation_frigate.277dd71a.jpg",
+    "static/media/ivorian_frigate.jpg": "/space_game_market/static/media/ivorian_frigate.9134d25c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab130184.js",
+    "static/js/2.f98c0228.chunk.js",
+    "static/css/main.983884e1.chunk.css",
+    "static/js/main.03fda149.chunk.js"
+  ]
+}
