@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.983884e1.chunk.css",
+    "main.js": "/static/js/main.f36ec984.chunk.js",
+    "main.js.map": "/static/js/main.f36ec984.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.170ad29f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.170ad29f.js.map",
+    "static/js/2.f98c0228.chunk.js": "/static/js/2.f98c0228.chunk.js",
+    "static/js/2.f98c0228.chunk.js.map": "/static/js/2.f98c0228.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b04d25815373770eaeb2945b71b5d166.js": "/precache-manifest.b04d25815373770eaeb2945b71b5d166.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.983884e1.chunk.css.map": "/static/css/main.983884e1.chunk.css.map",
+    "static/js/2.f98c0228.chunk.js.LICENSE.txt": "/static/js/2.f98c0228.chunk.js.LICENSE.txt",
+    "static/media/corporation_frigate.jpg": "/static/media/corporation_frigate.a65f4c30.jpg",
+    "static/media/federation_frigate.jpg": "/static/media/federation_frigate.277dd71a.jpg",
+    "static/media/ivorian_frigate.jpg": "/static/media/ivorian_frigate.9134d25c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.170ad29f.js",
+    "static/js/2.f98c0228.chunk.js",
+    "static/css/main.983884e1.chunk.css",
+    "static/js/main.f36ec984.chunk.js"
+  ]
+}
